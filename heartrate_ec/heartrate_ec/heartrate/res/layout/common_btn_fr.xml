@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+            android:id="@+id/btn_shouye"
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="29dip"
+                android:layout_height="29dip"
+                android:duplicateParentState="true"
+                android:src="@drawable/bar_heart_rate" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_shouye"
+                android:gravity="center_horizontal"
+                android:textSize="10sp"
+                android:text="计步" />
+
+        </LinearLayout>
+
+        <LinearLayout 
+            android:id="@+id/btn_women"
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView                
+                android:layout_width="29dip"
+                android:layout_height="29dip"
+                android:src="@drawable/bar_step"
+                android:duplicateParentState="true"
+                android:contentDescription="@string/app_name" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_women"
+				android:gravity="center_horizontal"
+                android:textSize="10sp"
+                android:text="心率" />
+
+        </LinearLayout>
+
+        <LinearLayout 
+            android:id="@+id/btn_person"
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"  >
+
+            <ImageView
+                android:layout_width="29dip"
+                android:layout_height="29dip"
+                android:contentDescription="@string/app_name"
+                android:duplicateParentState="true"
+                android:src="@drawable/bar_setting" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_person"
+				android:gravity="center_horizontal"
+                android:textSize="10sp" 
+                android:text="设置" />
+
+        </LinearLayout>
+  </LinearLayout>
+
+
+
+
+
+

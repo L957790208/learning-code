@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/steelblue" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/big_text_size"
+            android:text="用户信息" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="15dp"
+            android:src="@drawable/iv_back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_back"
+            android:text="返回" />
+
+        <TextView
+            android:id="@+id/tv_userinfo_save"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textSize="@dimen/big_text_size"
+            android:text="保存" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/bg_Gray" />
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+         <TextView
+             android:id="@+id/textview1"
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+			 android:gravity="center"
+             android:text="昵称" />
+
+         <EditText
+             android:id="@+id/et_user_nickname"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/textview1"
+             android:ems="10"
+             android:text="name" /> 
+		 <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentBottom="true"
+             android:background="@color/bg_Gray" />                          
+     </RelativeLayout> 
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="50dp" >
+
+         <TextView
+             android:id="@+id/textview2"
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+             android:gravity="center"
+             android:text="性别" />
+
+         <View
+             android:id="@+id/view1"
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:background="@color/bg_Gray" />
+
+         <RadioGroup
+             android:id="@+id/rg_user_sex"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_marginLeft="32dp"
+             android:layout_toRightOf="@+id/textview2"
+             android:orientation="horizontal" >
+
+             <RadioButton
+                 android:id="@+id/rb_user_man_radio"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:checked="true"
+                 android:text="男" />
+
+             <RadioButton
+                 android:id="@+id/rb_user_lady_radio"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="30dp"
+                 android:text="女" />
+         </RadioGroup>
+
+     </RelativeLayout>
+     
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+         <TextView
+             android:id="@+id/textview3"
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+			 android:gravity="center"
+             android:text="年龄" />
+
+         <EditText
+             android:id="@+id/et_user_age"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/textview3"
+             android:ems="10"
+             android:inputType="number"
+             android:text="20" />
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:background="@color/bg_Gray" />
+
+              
+     </RelativeLayout>
+     
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+         <TextView
+             android:id="@+id/textview4"
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+			 android:gravity="center"
+             android:text="身高" />
+
+         <EditText
+             android:id="@+id/et_user_height"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/textview4"
+             android:ems="10"
+             android:inputType="number"             
+             android:text="180" />
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:background="@color/bg_Gray" />
+              
+     </RelativeLayout>     
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+         <TextView
+             android:id="@+id/textview5"
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+			 android:gravity="center"
+             android:text="体重" />
+
+         <EditText
+             android:id="@+id/et_user_weight"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/textview5"
+             android:ems="10"
+             android:inputType="number"             
+             android:text="60" />
+
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:background="@color/bg_Gray" />
+              
+     </RelativeLayout>      
+     
+     <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+         <TextView
+             android:id="@+id/textview6"
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+			 android:gravity="center"
+             android:text="步长" />
+
+         <EditText
+             android:id="@+id/et_user_step_length"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/textview6"
+             android:ems="10"
+             android:inputType="number"             
+             android:text="50" />  
+         <View
+             android:layout_width="match_parent"
+             android:layout_height="1dp"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentBottom="true"
+             android:background="@color/bg_Gray" />                         
+     </RelativeLayout>   
+
+     <RelativeLayout
+         android:id="@+id/rl_user_sedentary_time"
+         android:layout_width="match_parent"
+         android:layout_height="50dp" >
+
+         <TextView
+             android:id="@+id/textview7"
+             android:layout_width="100dp"
+             android:layout_height="50dp"
+             android:gravity="center"
+             android:text="久坐时间" />
+
+         <TextView
+             android:id="@+id/et_user_sedentary_time"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:gravity="center"
+             android:text="60"
+             android:textSize="@dimen/zhong_text_size" />
+
+         <TextView
+             android:id="@+id/textView8"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignBaseline="@+id/et_user_sedentary_time"
+             android:layout_alignBottom="@+id/et_user_sedentary_time"
+             android:layout_toRightOf="@+id/et_user_sedentary_time"
+             android:text="分钟" />
+     </RelativeLayout>
+     
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/bg_Gray" />
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="50dp" >
+         <TextView
+             android:id="@+id/tv_update_userinfo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:text="查看手环信息" />
+
+
+
+     </RelativeLayout>
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="50dp" >
+
+     </RelativeLayout>
+                
+</LinearLayout>

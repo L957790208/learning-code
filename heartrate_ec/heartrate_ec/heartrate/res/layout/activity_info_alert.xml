@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/steelblue" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="信息提醒"
+            android:textSize="@dimen/big_text_size" />
+
+        <ImageView
+            android:id="@+id/info_alert_im_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="15dp"
+            android:src="@drawable/iv_back" />
+
+        <TextView
+            android:id="@+id/info_alert_tv_save"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="保存"
+            android:textSize="@dimen/big_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/info_alert_im_back"
+            android:text="返回" />
+
+    </RelativeLayout>
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">	    
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="25dp"
+		    android:textSize="@dimen/time_text_size"
+		    android:text="来电提醒" />
+
+		<CheckBox
+		    android:id="@+id/info_alert_cb_call"
+		    style="@style/CustomCheckboxTheme"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="25dp" />
+	   <View
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:background="@color/bg_Gray" />	    
+	</RelativeLayout>
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+		<CheckBox
+		    android:id="@+id/info_alert_cb_sms"
+		    style="@style/CustomCheckboxTheme"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="25dp" />
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="25dp"
+		    android:text="信息提醒"
+		    android:textSize="@dimen/time_text_size" />
+	   <View
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:background="@color/bg_Gray" />	    
+	</RelativeLayout>   
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="25dp"
+		    android:textSize="@dimen/time_text_size"
+		    android:text="应用提醒" />
+
+		<CheckBox
+		    android:id="@+id/info_alert_cb_app"
+		    style="@style/CustomCheckboxTheme"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="25dp" />
+	   <View
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:background="@color/bg_Gray" />	    
+	</RelativeLayout>	    
+</LinearLayout>
+
+

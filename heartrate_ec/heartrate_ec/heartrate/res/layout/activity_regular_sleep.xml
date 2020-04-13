@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/steelblue" >
+
+        <TextView
+            android:id="@+id/tv_sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/big_text_size"
+            android:text="自动睡眠" />
+
+        <ImageView
+            android:id="@+id/iv_timing_sleep_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="15dp"
+            android:src="@drawable/iv_back" />
+
+        <TextView
+            android:id="@+id/tv_timing_sleep_save"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textSize="@dimen/big_text_size"
+            android:text="保存" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_sleep"
+            android:layout_alignBottom="@+id/tv_sleep"
+            android:layout_toRightOf="@+id/iv_timing_sleep_back"
+            android:text="返回" />
+
+    </RelativeLayout>
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    >
+
+		<CheckBox
+		    android:id="@+id/cb_rs_main_switch"
+		    style="@style/CustomCheckboxTheme"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"	    
+		    android:layout_marginRight="25dp" />
+	    
+	</RelativeLayout>
+	<TextView
+	    android:id="@+id/textView2"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:background="@color/bg_Gray"
+	    android:gravity="center"
+	    android:textSize="@dimen/zhong_text_size"
+	    android:text="睡眠时间" />
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    >
+
+		<TextView
+		    android:id="@+id/tv_rs_start_time"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="25dp"
+		    android:textSize="@dimen/time_text_size"
+		    android:text="22:00" />
+
+		<CheckBox
+		    android:id="@+id/cb_rs_sleep_switch"
+		    style="@style/CustomCheckboxTheme"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="25dp" />
+
+		<TextView
+		    android:id="@+id/tv_rs_stop_time"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:textSize="@dimen/time_text_size"
+		    android:text="6:00" />
+	    
+	</RelativeLayout>	
+	<TextView
+	    android:id="@+id/textView3"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:background="@color/bg_Gray"
+	    android:gravity="center"
+	    android:textSize="@dimen/zhong_text_size"
+	    android:text="睡眠提醒" />
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    >
+
+		<TextView
+		    android:id="@+id/tv_rs_remind"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:textSize="@dimen/time_text_size"
+		    android:text="00:00" />
+
+		<CheckBox
+		    android:id="@+id/cb_rs_remind_switch"
+		    style="@style/CustomCheckboxTheme"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="25dp" />
+	    
+	</RelativeLayout>	
+	<TextView
+	    android:id="@+id/textView4"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:background="@color/bg_Gray"
+	    android:gravity="center"
+	    android:textSize="@dimen/zhong_text_size"
+	    android:text="午休时间" />   
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    >
+
+		<TextView
+		    android:id="@+id/tv_rs_stop_siesta"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_centerVertical="true"
+		    android:textSize="@dimen/time_text_size"
+		    android:text="13:30" />
+
+		<TextView
+		    android:id="@+id/tv_rs_start_siesta"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginLeft="25dp"
+		    android:textSize="@dimen/time_text_size"
+		    android:text="12:30" />
+
+		<CheckBox
+		    android:id="@+id/cb_rs_siesta_switch"
+		    style="@style/CustomCheckboxTheme"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"
+		    android:layout_marginRight="25dp" />
+	    
+	</RelativeLayout>	    
+</LinearLayout>
+
+

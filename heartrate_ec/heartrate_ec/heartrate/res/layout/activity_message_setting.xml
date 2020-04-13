@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/steelblue" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/big_text_size"
+            android:text="消息设置" />
+
+        <ImageView
+            android:id="@+id/message_cb_im_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="15dp"
+            android:src="@drawable/iv_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/message_cb_im_back"
+            android:text="返回" />
+
+    </RelativeLayout>    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+		<CheckBox
+		    android:id="@+id/message_cb_call_switch"
+		    style="@style/CustomCheckboxTheme"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"	    
+		    android:layout_marginRight="50dp" />
+
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentLeft="true"
+		    android:background="@color/bg_Gray" />
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginLeft="60dp"
+		    android:text="来电提醒"
+		    android:textSize="@dimen/time_text_size" />
+        
+    </RelativeLayout>
+
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginLeft="60dp"	        
+	        android:text="短信提醒"
+	        android:textSize="@dimen/time_text_size" />
+
+	    <CheckBox
+	        android:id="@+id/message_cb_sms_switch"
+	        style="@style/CustomCheckboxTheme"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="50dp" />
+
+	    <View
+	        android:id="@+id/view1"
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:background="@color/bg_Gray" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+            android:textSize="@dimen/time_text_size"
+		    android:layout_alignParentLeft="true"
+		    android:layout_marginLeft="60dp"            
+            android:text="应用消息提醒" />
+		<CheckBox
+		    android:id="@+id/message_cb_appmsg_switch"
+		    style="@style/CustomCheckboxTheme"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"	    
+		    android:layout_marginRight="50dp" />    
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentLeft="true"
+		    android:background="@color/bg_Gray" />
+		        
+    </RelativeLayout>
+
+	<TextView
+	    android:id="@+id/message_cb_tv_save"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:gravity="center"
+	    android:background="@color/bg_Gray_light"
+	    android:text="保存"
+	    android:textSize="@dimen/big_text_size" />
+
+	<Button
+	    android:id="@+id/message_cb_button1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Button" />
+        
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+

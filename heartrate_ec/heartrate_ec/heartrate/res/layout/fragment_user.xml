@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true">
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="195dip"
+		    android:background="@drawable/z_me_user_ico_bg" >
+			<ImageView
+			    android:id="@+id/user_im_icon"
+			    android:layout_width="65dip"
+			    android:layout_height="65dip"
+			    android:layout_centerHorizontal="true"
+			    android:layout_centerVertical="true"
+			    android:src="@drawable/z_me_head" />
+			<TextView
+			    android:id="@+id/user_tv_please"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@+id/user_im_icon"
+			    android:layout_centerHorizontal="true"
+			    android:text="请登录" />		    
+		</RelativeLayout>        
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/line_Gray" />    
+    
+     <RelativeLayout 
+        android:id="@+id/rl_user"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+         <ImageView
+             android:id="@+id/imageView1"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             android:padding="15dp"
+             android:src="@drawable/user_information" />
+
+         <TextView
+             android:id="@+id/tv_user_info"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/imageView1"
+             android:text="User info" />
+
+         <ImageView
+             android:id="@+id/imageView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="10dp"
+             android:padding="10dp"             
+             android:src="@drawable/iv_next" />
+
+         <View
+             android:layout_width="300dp"
+             android:layout_height="1dp"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:background="@color/green" />
+              
+     </RelativeLayout>
+
+     <RelativeLayout 
+        android:id="@+id/rl_ble_device"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+         <ImageView
+             android:id="@+id/imageView1"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             android:padding="15dp"
+             android:src="@drawable/love_luck_barcelet" />
+
+         <TextView
+             android:id="@+id/tv_ble_device"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/imageView1"
+             android:text="Disconnected" />
+
+         <ImageView
+             android:id="@+id/imageView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="10dp"
+             android:padding="10dp"             
+             android:src="@drawable/iv_next" />              
+     </RelativeLayout>
+     <RelativeLayout 
+        android:id="@+id/rl_pair"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+         <ImageView
+             android:id="@+id/imageView3"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             android:padding="15dp"
+             android:src="@drawable/bang_ding_hardware" />
+
+         <TextView
+             android:id="@+id/tv_user_info"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/imageView3"
+             android:text="Pair Device" />
+
+         <ImageView
+             android:id="@+id/imageView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="10dp"
+             android:padding="10dp"             
+             android:src="@drawable/iv_next" />
+
+         <View
+             android:layout_width="300dp"
+             android:layout_height="1dp"
+             android:layout_alignParentRight="true"
+             android:layout_alignParentTop="true"
+             android:background="@color/green" />
+
+         <View
+             android:layout_width="300dp"
+             android:layout_height="1dp"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:background="@color/green" />
+              
+     </RelativeLayout>
+     
+     <RelativeLayout 
+        android:id="@+id/rl_about"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+         <ImageView
+             android:id="@+id/imageView4"
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="10dp"
+             android:padding="15dp"
+             android:src="@drawable/image_about_us_fr" />
+
+         <TextView
+             android:id="@+id/tv_user_info"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/imageView4"
+             android:text="About us" />
+
+         <ImageView
+             android:id="@+id/imageView2"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginRight="10dp"
+             android:padding="10dp"             
+             android:src="@drawable/iv_next" />              
+     </RelativeLayout>
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/green" />        
+     
+</LinearLayout>
+
+
+
+

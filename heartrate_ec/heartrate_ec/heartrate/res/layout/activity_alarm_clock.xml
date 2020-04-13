@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/steelblue" >
+
+        <TextView
+            android:id="@+id/alarm_clock_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/big_text_size"
+            android:text="闹钟" />
+
+        <ImageView
+            android:id="@+id/alarm_clock_tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="15dp"
+            android:src="@drawable/iv_back" />
+
+        <TextView
+            android:id="@+id/alarm_clock_tv_save"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textSize="@dimen/big_text_size"
+            android:text="保存" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/alarm_clock_tv_back"
+            android:text="返回" />
+
+    </RelativeLayout>    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" 
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+		<CheckBox
+		    android:id="@+id/alarm_clock_cb_eat_switch"
+		    style="@style/CustomCheckboxTheme"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"	    
+		    android:layout_marginRight="25dp" />
+
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentLeft="true"
+		    android:background="@color/bg_Gray" />
+
+		<TextView
+		    android:id="@+id/alarm_clock_tv_eat_time"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+		    android:text="12:00"
+		    android:textSize="@dimen/time_text_size" />
+
+		<TextView
+		    android:id="@+id/textView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/alarm_clock_tv_eat_time"
+		    android:layout_below="@+id/alarm_clock_tv_eat_time"		    
+		    android:textSize="@dimen/small_text_size" 
+		    android:padding="3dp"
+		    android:text="吃饭"/>
+        
+    </RelativeLayout>
+
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" 
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+	    <TextView
+	        android:id="@+id/alarm_clock_tv_drinking_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:text="12:00"
+	        android:textSize="@dimen/time_text_size" />
+
+	    <CheckBox
+	        android:id="@+id/alarm_clock_cb_drinking_switch"
+	        style="@style/CustomCheckboxTheme"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_marginRight="25dp" />
+
+	    <View
+	        android:id="@+id/view1"
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:background="@color/bg_Gray" />
+
+	    <TextView
+	        android:id="@+id/textView3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/alarm_clock_tv_drinking_time"
+	        android:layout_below="@+id/alarm_clock_tv_drinking_time"
+	        android:padding="3dp"
+	        android:text="喝水"
+	        android:textSize="@dimen/small_text_size" />
+
+	</RelativeLayout>
+
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" 
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <TextView
+            android:id="@+id/alarm_clock_tv_alarm_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+            android:textSize="@dimen/time_text_size"
+            android:text="22:00" />
+		<CheckBox
+		    android:id="@+id/alarm_clock_cb_alarm_switch"
+		    style="@style/CustomCheckboxTheme"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"	    
+		    android:layout_marginRight="25dp" />    
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentLeft="true"
+		    android:background="@color/bg_Gray" />
+
+		<TextView
+		    android:id="@+id/textView5"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/alarm_clock_tv_alarm_time"
+		    android:layout_below="@+id/alarm_clock_tv_alarm_time"
+		    android:padding="3dp"
+		    android:text="时间"
+		    android:textSize="@dimen/small_text_size" />
+		        
+    </RelativeLayout>
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp" 
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <TextView
+            android:id="@+id/alarm_clock_tv_custom_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+		    android:layout_centerVertical="true"
+            android:textSize="@dimen/time_text_size"
+            android:text="12:00" />
+		<CheckBox
+		    android:id="@+id/alarm_clock_cb_custom_switch"
+		    style="@style/CustomCheckboxTheme"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true"
+		    android:layout_centerVertical="true"	    
+		    android:layout_marginRight="25dp" />    
+		<View
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignParentLeft="true"
+		    android:background="@color/bg_Gray" />
+
+		<TextView
+		    android:id="@+id/alarm_clock_tv_custom"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/alarm_clock_tv_custom_time"
+		    android:layout_below="@+id/alarm_clock_tv_custom_time"
+		    android:padding="3dp"
+		    android:text="自定义"
+		    android:textSize="@dimen/small_text_size" />
+		        
+    </RelativeLayout>        
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
